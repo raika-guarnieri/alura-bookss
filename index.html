@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1><a href="/">Alura Books</a></h1>
+                <ul class="menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#books">Livros</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção principal com livros -->
+    <main id="home">
+        <section class="book-list" id="books">
+            <article class="book">
+                <a href="https://www.amazon.com.br/s?k=O+Poder+do+Hábito" target="_blank">
+                    <img src="images/livro1.jpg" alt="Capa do livro O Poder do Hábito">
+                    <h2>O Poder do Hábito</h2>
+                </a>
+                <p>Um livro que explora como hábitos moldam nossa vida.</p>
+                <button onclick="addToCart('O Poder do Hábito')">Adicionar ao Carrinho</button>
+            </article>
+
+            <article class="book">
+                <a href="https://www.amazon.com.br/s?k=De+Zero+a+Um" target="_blank">
+                    <img src="images/livro2.jpg" alt="Capa do livro De Zero a Um">
+                    <h2>De Zero a Um</h2>
+                </a>
+                <p>Como construir o futuro e sair da mediocridade.</p>
+                <button onclick="addToCart('De Zero a Um')">Adicionar ao Carrinho</button>
+            </article>
+
+            <article class="book">
+                <a href="https://www.amazon.com.br/s?k=Gestão+do+Amanhã" target="_blank">
+                    <img src="images/livro3.jpg" alt="Capa do livro Gestão do Amanhã">
+                    <h2>Gestão do Amanhã</h2>
+                </a>
+                <p>Estratégias para enfrentar os desafios do futuro.</p>
+                <button onclick="addToCart('Gestão do Amanhã')">Adicionar ao Carrinho</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Seção "Sobre" -->
+    <section id="about">
+        <h2>Sobre</h2>
+        <p>Alura Books é uma plataforma que traz as melhores recomendações de livros para você. Explore, descubra e compre os livros que mais te interessam.</p>
+    </section>
+
+    <!-- Seção "Contato" -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Para entrar em contato conosco, envie um email para <a href="mailto:contato@alurabooks.com">contato@alurabooks.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alura Books</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
